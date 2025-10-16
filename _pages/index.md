@@ -5,6 +5,11 @@ id: home
 permalink: /
 ---
 
+#p { margin: 0 }
+<p style="text-align:center; margin-bottom: 1.5rem;">
+  <img src="{{ '/assets/images/welcome.svg' | relative_url }}" alt="Welcome" style="max-width:560px; width:100%; height:auto; border-radius:8px;" />
+</p>
+
 # Welcome! 🌱
 
 <p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
