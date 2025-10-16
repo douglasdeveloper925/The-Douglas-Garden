@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Welcome illustration">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" rx="12" fill="#f8fafc"/>
+  <g transform="translate(28,32)">
+    <rect x="0" y="0" width="136" height="136" rx="12" fill="url(#g)" />
+    <g transform="translate(18,18)" fill="#fff" opacity="0.95">
+      <circle cx="40" cy="40" r="16" />
+      <rect x="0" y="84" width="80" height="12" rx="6" />
+      <rect x="0" y="104" width="56" height="8" rx="4" />
+    </g>
+    <text x="180" y="44" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="28" fill="#0f172a">Welcome!</text>
+    <text x="180" y="80" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-size="14" fill="#334155">Explore your digital garden and start with "Your first note".</text>
+  </g>
+</svg>
