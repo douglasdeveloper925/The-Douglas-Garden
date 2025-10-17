@@ -5,19 +5,18 @@ id: home
 permalink: /
 ---
 
-#p { margin: 0 }
+<div id="hero" style="background-image: url('{{ '/assets/images/welcome.svg' | relative_url }}'); background-size: cover; background-position: center right; min-height:80vh; display:flex; align-items:center; padding: 4rem 1rem; border-radius: 8px; margin-bottom: 1.5rem;">
+  <div style="max-width: 64rem; margin: 0 auto; background: rgba(15,23,42,0.12); padding: 2.5rem; border-radius: 8px; backdrop-filter: blur(3px);">
+    <h1 style="margin:0; line-height:1.05;">Wayne Douglas: notes and inner dialogue.</h1>
+    <p style="margin:0.75rem 0 0; color:#0f172a;">Let me divert your attention to <strong>[[Getting Started]]</strong> to begin exploring.</p>
+  </div>
+</div>
 
-# <span style="display:inline-flex; align-items:center; gap:0.75rem;"><img src="{{ '/assets/images/welcome.svg' | relative_url }}" alt="Welcome" style="width:56px; height:56px; border-radius:8px; object-fit:cover;" /> Wayne Douglas: notes and inner dialogue.</span>
+This online dialogue is a place where I can write freely and organize my notes on [Personal Development] and Transformation. See also my personal website  [my personal website here](https://challengeyourself.tech).
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+There is also information and resources about various other topics such as [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
-
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
-
-<strong>Recently updated notes</strong>
+<strong>Recent Notes in no particular order</strong>
 
 <ul>
   {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
