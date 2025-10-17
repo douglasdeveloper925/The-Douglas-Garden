@@ -1,4 +1,5 @@
 $color-primary: hsl(0, 0%, 10%);
+$color-secondary: #00bcd4; // CyanLines - site secondary accent
 $color-text: hsl(0, 0%, 20%);
 $color-subtext: hsl(0, 0%, 30%);
 $color-border: hsl(0, 0%, 85%);
@@ -15,6 +16,8 @@ body {
   padding: 4vh 6vw;
   overflow-x: hidden;
   color: $color-text;
+  /* expose secondary color as a CSS custom property for templates/includes */
+  --color-secondary: #{$color-secondary};
   font-size: 1rem;
   max-width: 63em;
 
