@@ -3,7 +3,8 @@ $color-secondary: #00bcd4; // CyanLines - site secondary accent
 $color-text: hsl(0, 0%, 20%);
 $color-subtext: hsl(0, 0%, 30%);
 $color-border: hsl(0, 0%, 85%);
-$color-box-background: mix($color-primary, white, 4%);
+@use "sass:color";
+$color-box-background: color.mix($color-primary, white, 4%);
 $border-radius: 4px;
 $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
   sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
@@ -19,7 +20,7 @@ body {
   /* expose secondary color as a CSS custom property for templates/includes */
   --color-secondary: #{$color-secondary};
   /* a softer, very pale variant suitable for backgrounds */
-  --color-secondary-soft: #{mix($color-secondary, white, 88%)};
+  --color-secondary-soft: #{color.mix($color-secondary, white, 88%)};
   font-size: 1rem;
   max-width: 63em;
 
@@ -37,7 +38,7 @@ time {
 footer {
   margin: 2em 0;
   font-size: 0.8em;
-  color: mix($color-text, white, 80%);
+  color: color.mix($color-text, white, 80%);
   padding-top: 1em;
 }
 
