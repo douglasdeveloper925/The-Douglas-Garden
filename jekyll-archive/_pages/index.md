@@ -12,7 +12,7 @@ permalink: /
   </div>
 </div>
 
-This online dialogue is a place where I can write freely and organize my notes on [Personal Development] and Transformation. See also my personal website  [my personal website here](https://challengeyourself.tech).
+This online dialogue is a place where I can write freely and organize my notes on [Personal Development] and [Transformation]. See also my personal website  [my personal website here](https://challengeyourself.tech).
 
 There is also information and resources about various other topics such as [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
 
