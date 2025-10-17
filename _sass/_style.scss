@@ -18,6 +18,8 @@ body {
   color: $color-text;
   /* expose secondary color as a CSS custom property for templates/includes */
   --color-secondary: #{$color-secondary};
+  /* a softer, very pale variant suitable for backgrounds */
+  --color-secondary-soft: #{mix($color-secondary, white, 88%)};
   font-size: 1rem;
   max-width: 63em;
 
