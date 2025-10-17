@@ -1,0 +1,39 @@
+{{/* Minimal home layout: show featured_image as full-bleed hero, then page content */}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ .Site.Title }}</title>
+    {{ if .Site.Params.customCSS }}<link rel="stylesheet" href="{{ .Site.Params.customCSS }}">{{ end }}
+    <style>
+      body { margin:0; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial }
+      .hero { min-height: 60vh; display:flex; align-items:center; justify-content:center; color:white; text-align:center; background-size:cover; background-position:center; }
+      .hero .inner { background: rgba(0,0,0,0.35); padding:2rem; border-radius:6px }
+      .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem }
+    </style>
+  </head>
+  <body>
+    {{ with .Params.featured_image }}
+      <div class="hero" style="background-image: url('{{ . }}');">
+        <div class="inner">
+          <h1>{{ $.Title }}</h1>
+          {{ with $.Summary }}<p>{{ . }}</p>{{ else }}<p>{{ $.Content | plainify | truncate 160 }}</p>{{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    <main class="container">
+      {{ if .Pages }}
+        <h2>Notes & Pages</h2>
+        <ul>
+        {{ range .Pages }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+      {{ else }}
+        {{ .Content }}
+      {{ end }}
+    </main>
+  </body>
+</html>
